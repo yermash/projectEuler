@@ -1,0 +1,5 @@
+tot = 0
+for i in range(1001):
+    tot+= i**i
+
+print(str(tot - 1)[-11:])
