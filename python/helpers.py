@@ -8,8 +8,6 @@ def isPrime(num):
             return False
     return True
 
-print(isPrime(2))
-
 def sieve(limit):
     is_prime = [True] * (limit + 1)
     is_prime[0], is_prime[1] = False, False 
@@ -19,7 +17,6 @@ def sieve(limit):
                 is_prime[j] = False
     return is_prime
 
-
 def divisors(n):
     divs = set()
     for i in range(1, int(math.sqrt(n)) + 1):
@@ -27,3 +24,10 @@ def divisors(n):
             divs.add(i)
             divs.add(n // i)
     return divs
+
+
+def listProd(l):
+    ret = 1
+    for elem in l:
+        ret *= elem
+    return ret
