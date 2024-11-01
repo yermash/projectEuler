@@ -1,5 +1,7 @@
 import math
 
+# for file parsing, look at pokerHands.py
+
 def isPrime(num):
     if num < 2:
         return False
