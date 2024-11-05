@@ -1,4 +1,5 @@
 from helpers import *
+import time
 
 def is_valid_prime_generating(n, is_prime):
     if not is_prime[1 + n]:      
@@ -21,5 +22,6 @@ def sum_prime_generating_integers(limit):
             total_sum += n
     return total_sum
 
-result = sum_prime_generating_integers(100000000)
+
+result = sum_prime_generating_integers(10**6)
 print(result)
