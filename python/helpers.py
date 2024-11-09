@@ -89,3 +89,6 @@ def listProd(l):
     for elem in l:
         ret *= elem
     return ret
+
+def nCr(n, k):
+    return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
