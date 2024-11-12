@@ -92,3 +92,6 @@ def listProd(l):
 
 def nCr(n, k):
     return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
+
+def pentagonal(n):
+	return n*(3*n-1)//2
